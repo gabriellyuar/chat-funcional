@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon-driveneats" href="https://logosmarcas.net/wp-content/uploads/2022/04/Google-Chat-Logo.png" />
+    <title>Bate Papo </title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="login-page">
+        <div class="container-login-page">
+            <img src="./img/logo-uol.webp" alt="image">
+            <input data-test="input-name" text="text" class="login-input" placeholder="Digite seu nome" />
+            <button data-test="send-name" id="send" type="button" onclick="login()">Entrar</button>
+        </div>
+        <div class="loading hidden">
+            <img src="https://logosmarcas.net/wp-content/uploads/2022/04/Google-Chat-Logo.png" alt="image">
+            <img src="./img/loading-gif-png-5.gif" alt="image"/>
+            <p class="paragraph">Entrando...</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <img src="https://logosmarcas.net/wp-content/uploads/2022/04/Google-Chat-Logo.png" alt="logo-uol">
+            <div>
+                <ion-icon data-test="open-participants" name="people"></ion-icon>
+                <ion-icon class="exit" name="log-out-outline" onclick="exit()"></ion-icon>
+            </div>
+        </header>
+
+        <main>
+            <div class="message-container"></div>
+        </main>
+
+        <footer>
+            <input data-test="input-message" type="text" class="text-input" placeholder="Escreva aqui..." />
+            <ion-icon data-test="send-message" id="submit" name="paper-plane-outline"
+                onclick="sendMessage()"></ion-icon>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
